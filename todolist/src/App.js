@@ -18,7 +18,7 @@ function App() {
         id: Math.random()
       }
       ])
-      setText('')
+      setText('') // Тест изменений GitHub
     }
   }
 
