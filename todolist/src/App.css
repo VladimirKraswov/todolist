@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.todos {
+    color: rgba(200, 0, 0, .2);
+    font-size: 64px;
+}
+  
+.textFiled {
+    width: 400px;
+    font-size: 24px;
+    padding: 20px;
+}
+  
+.list {
+    list-style: none;
+    padding: 0;
+    border: 1px solid rgba(0,0,0, .2);
+    max-width: 420px;
+    margin: 0 auto;
+}

@@ -1,0 +1,28 @@
+.item {
+    padding: 10px;
+     font-size: 20px;
+     display: flex;
+     justify-content: space-between;
+}
+     
+.checkbox {
+  
+}
+     
+.text {
+     width: 400px;
+     font-size: 18px;
+     word-break: break-all;
+}
+
+.close {
+     width: 32px;
+     height: 32px;
+     opacity: 0.3;
+     color: red;
+     text-decoration: none;
+}
+   
+.close:hover {
+     opacity: 1;
+}

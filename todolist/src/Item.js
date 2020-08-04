@@ -1,18 +1,12 @@
 import React, { useState, useEffect } from 'react'
+import './Item.css'
 
 export default function Item(props) {
-    const [select, setSelect] = useState(false)
-
-    const onChangeChecked = () => {
-        setSelect(!select)
-    }
-
     return (
-        <div>
-            <span><input type='checkbox' checked={select} onChange={onChangeChecked} /></span>
-            {select ? <strike>{props.text}</strike> : <span>{props.text}</span>}
-            <span><button onClick={() => props.deleteFunc(props.id)}> Del </button></span>
-        </div>
+        <li className='item'>
+            <input className='checkbox' type='checkbox' checked={props.checked} onChange={() => props.onChecked(props.id)} />
+            {props.checked ? <p className='text'><strike>{props.text}</strike></p> : <p className='text'>{props.text}</p>}
+            <a href='#' className="close" onClick={() => props.deleteFunc(props.id)}> X </a>
+        </li>
     )
-
 }

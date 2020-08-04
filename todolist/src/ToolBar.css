@@ -1,0 +1,16 @@
+.toolBar {
+     width: 400px;
+     display: flex;
+     justify-content: space-between;
+     padding: 10px;
+}
+
+.clearItem {
+     text-decoration: none;
+     color: black;
+     opacity: 0.3;
+}
+
+.clearItem:hover {
+     opacity: 1;
+}
